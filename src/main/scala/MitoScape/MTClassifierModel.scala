@@ -45,7 +45,9 @@ object MTClassifierModel {
    * removed mapq scores entirely. In hindsight, the amplified mtDNA reads and rho0 reads should have
    * been barcoded, multiplexed and sequenced together. I hope this approach can be taken in the future.
    *
-   * LNS - 2019-01-06
+   * An alternative is to perform a Z-score transformation on all the Mapping qualities so that they can be compared.
+   * At this time, the algorithm is working very well, so I don't think this is necessary, but it may be worth
+   * considering in the future.
    */
   val R_FORMULA = "label ~ MTEditDist + LD  + NTEditDist + NTScore + MTNumAlignments + NTNumAlignments"
 
