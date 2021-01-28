@@ -42,7 +42,7 @@ abstract class BamReader(spark: SparkSession) extends Serializable {
 
   /** Summarizes/aggregates the dataframe (df) bby removing redundant rows.
     *
-    * @param df - input dataframe with redundat row.
+    * @param df - input dataframe with redundant row.
     * @return Dataframe where each row corresponds to a unique read.
     */
   protected def summarize(df: DataFrame): DataFrame
