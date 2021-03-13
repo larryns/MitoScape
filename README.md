@@ -48,4 +48,4 @@ The prefix matches the prefix of the bam filenames generated in the steps above.
 5. In theory any variant caller will do, but MitoScape was tested on Mutect2 using mitochondrial mode.
 
 
-Please feel free to contact me should you have questions. I'll be adding more information as time goes on.
+Please feel free to contact me should you have questions. I also have some sample bash scripts that I can share.
