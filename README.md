@@ -41,7 +41,7 @@ java -Xmx16G -jar MitoScape-1.0.jar \
   --prefix <prefix, see below for explanation> \
   --out <output prefix for bam file>
 ```
-The prefix matches the prefix of the bam filenames generated in the steps above. MitoScape will look for <prefix>\_MT\_MD.bam and <prefix>\_NT.bam.
+The prefix matches the prefix of the bam filenames generated in the steps above. MitoScape will look for <prefix>\_MT\_MD.bam and <prefix>\_NT.bam. Be sure to "untar" the MTClassifierModel.RF.tar file.
 
 ### Variant Calling
 
