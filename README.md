@@ -18,7 +18,7 @@ MitoScape was tested on gsnap, which is able to handle the circular mtDNA chromo
 
 1. Align your fastq files to the mitochondrial revised Cambridge reference sequence (rCRS) **only**. Note:
 - The output bam filename **must** end in"\_MT.bam". 
-- The output bam file **must** be sorted by read name (```samtools sort -n```).
+- The output bam file **must** be sorted by coordinate (```samtools sort```).
 - I suggest keeping only reads that are mapped properly (```samtools view -f 0x3```).
 2. Using the file generated from step 1, create a bam file with MD tags using samtools. The file from this step **must** end in "\_MT\_MD.bam".
 ```
