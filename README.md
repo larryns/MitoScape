@@ -24,7 +24,8 @@ MitoScape was tested on gsnap, which is able to handle the circular mtDNA chromo
 ```
 samtools calmd -e -Q --output-fmt BAM input_MT.bam > input_MT_MD.bam
 ```
-3. Align the same fastq files in step 1 to the full human genome minus the rCRS. That is your reference fasta file must be the entire genome with chrM/MT removed. 
+3. Convert the files generated in step 1 ("\_NT.bam") back to fastq. 
+3. Align these fastq files in step 3 to the full human genome minus the rCRS. That is your reference fasta file must be the entire genome with chrM/MT removed. 
 - The filename of created ***must*** end in "\_NT.bam".
 - The output file **must** be sorted by **chromsome and location**.
 - I suggest again that you keep only reads that are mapped properly (```samtools view -f 0x3```).
