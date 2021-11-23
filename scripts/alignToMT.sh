@@ -72,6 +72,6 @@ gsnap \
 # Get the MD file
 samtools \
 	-e -Q --output-fmt BAM \
-	$oFile ${DATADIR}/rCRS.fa > ${OUTDIR}/${1}_MD.bam
+	$oFile ${DATADIR}/rCRS.fa > ${OUTDIR}/${1}_MT_MD.bam
 
 exit 0
