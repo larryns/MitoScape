@@ -50,3 +50,7 @@ The prefix matches the prefix of the bam filenames generated in the steps above.
 
 
 Please feel free to contact me should you have questions. Please see the scripts directory for sample scripts.
+  
+### Further Documentation
+  
+If you use MitoScape, please cite: "MitoScape: A big-data, machine-learning platform for obtaining mitochondrial DNA from next-generation sequencing data". PLoS Comput Biol. 2021 Nov 11;17(11):e1009594. doi: 10.1371/journal.pcbi.1009594. eCollection 2021 Nov.  More information on the algorithm and design are also included in this paper.
