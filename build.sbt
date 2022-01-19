@@ -81,7 +81,10 @@ assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeSca
 assemblyJarName in assembly := "MitoScapeClassify.jar"
 mainClass in assembly := Some("MitoScape.MTClassify")
 
+// The META-INF services needs to be included for some libs, like csv. But this means you cannot use Java 11,
+// you have to use Java 8 when building.
 assemblyMergeStrategy in assembly := {
+	case path if path.contains("META-INF/services") => MergeStrategy.concat
 	case PathList("module-info.class") => MergeStrategy.discard
 	case PathList("org", "apache", "parquet", "avro", xs @ _*) => MergeStrategy.last
 	case PathList("org", "apache", "spark", "unused", "UnusedStubClass.class") => MergeStrategy.first
