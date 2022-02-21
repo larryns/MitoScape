@@ -37,7 +37,8 @@ samtools calmd -e -Q --output-fmt BAM input_MT.bam > input_MT_MD.bam
 java -Xmx16G -jar MitoScape-1.0.jar \
   --threads <number of threads> \
   --prob <classification probability> \
-  --ld NUMTs_hg38.txt \
+  --ld mitomap.ld \
+  --numt NUMTs_hg38.txt \
   --classifier MTClassifierModel.RF \
   --prefix <prefix, see below for explanation> \
   --out <output prefix for bam file>
