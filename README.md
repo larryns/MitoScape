@@ -4,6 +4,8 @@ A big-data, machine-learning workflow for obtaining mtDNA sequence from NGS data
 ## Cavatica Approach
 Workflow and additional documenatation available at: : https://cavatica.sbgenomics.com/public/apps#d3b-bixu/app-publisher/mitoscape-wf/, including full instructions on how to run MitoScape using the Cavatica framework. If you require help on running MitoScape on Cavatica, please look at the Cavatica documentation and reach out to the Cavatica team.
 
+**Note:** The Cavatica approach uses an older Docker version of the code. I have since made several bug fixes and upgraded the Spark engine and libraries. The jar version described below is the latest and most well-tested version. As far as I know the Docker version in the Cavatica group has not been updated to use the current jar file, and I am no longer maintaining this version. Use at your own peril.
+
 ## Local cluster/server Approach
 If you wish to run MitoScape independently of Cavatica, the following are the steps. You can use the fat jar including here or clone the source and create the fat jar with 
 ```
