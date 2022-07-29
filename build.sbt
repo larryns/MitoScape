@@ -55,7 +55,7 @@ mainClass in (Compile, packageBin) := Some("MitoScape.MTClassify")
 enablePlugins(DockerPlugin, JavaAppPackaging)
 
 dockerBaseImage := "openjdk:8-jre-slim"
-maintainer := "singhln@chop.edu"
+maintainer := "larrynsingh@gmail.com"
 exportJars := true
 
 /* NOTE: The COPY command only works if you have picard.jar in the same 
@@ -90,6 +90,7 @@ assemblyMergeStrategy in assembly := {
 	case PathList("org", "apache", "spark", "unused", "UnusedStubClass.class") => MergeStrategy.first
 	case PathList("org", "apache", "commons", "logging", xs @_ *) => MergeStrategy.first
 	case PathList("com", "esotericsoftware", xs @ _*) => MergeStrategy.first
+	case "git.properties" => MergeStrategy.discard
 	case x => 
 		val oldStrategy = (assemblyMergeStrategy in assembly).value
 		oldStrategy(x)
