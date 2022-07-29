@@ -54,6 +54,12 @@ The prefix matches the prefix of the bam filenames generated in the steps above.
 
 Please feel free to contact me should you have questions. Please see the scripts directory for sample scripts.
   
+## Building MitoScape
+
+The fat jar is somewhat onerous to maintain, and I will not be maintaining that going forward. The latest versions of sbt and java will not work to
+create the fat jar in the current state. You would have to either use the older version of sbt and sbt-assembly or modify the build.sbt to get the sbt assembly to work. At some point, these older versions may no longer be avialablle. Note that you will also need to use Java 8 to get the fat far to build.
+Given all these issues, I will be switching back to Docker in the near future, and only supporting Docker builds.
+
 ### Further Documentation
   
 If you use MitoScape, please cite: 
