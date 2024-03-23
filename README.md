@@ -1,5 +1,5 @@
 # MitoScape
-A big-data, machine-learning workflow for obtaining mtDNA sequence from NGS data. For more details see this [video](https://www.youtube.com/watch?v=lB9kBeq8m8c).
+A big-data, machine-learning workflow for obtaining mtDNA sequence from NGS data. For more details and background on the problems and motivation, see this [video](https://www.youtube.com/watch?v=lB9kBeq8m8c). Comments are welcome. Please feel free to reach out to me.
 
 ## Cavatica Approach
 Workflow and additional documenatation available at: : https://cavatica.sbgenomics.com/public/apps/d3b-bixu/app-publisher/mitoscape-wf/, including full instructions on how to run MitoScape using the Cavatica framework. If you require help on running MitoScape on Cavatica, please look at the Cavatica documentation and reach out to the Cavatica team. Note that you **must** create a cavatica account to access the URL above.
